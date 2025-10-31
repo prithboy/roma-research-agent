@@ -79,6 +79,7 @@ ulid-py
 python-dotenv
 sentient-agent-framework
 arxiv
+pydantic
 ```
 
 ## 🧠 Notes
