@@ -50,6 +50,15 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+```bash
+pip uninstall -y ulid ulid-py ulid3
+pip install ulid-py
+```
+
+```bash
+python -m pip install --upgrade pip
+```
+
 ## 4️⃣ Create .env file
 * Create a new file named .env in the project root and add your OpenRouter key: [OpenRouter](https://openrouter.ai/)
 ```bash
@@ -66,23 +75,10 @@ echo %OPENROUTER_API_KEY%
 ```
 * If it shows your key (partially hidden), you're good.
 
-* since you repoen your terminal so before entering run command activate `venv` again
+* since you repoen your terminal, so before entering run command activate `venv` again
 ```bash
 python -m venv venv
 venv\Scripts\activate
-```
-
-## 🚨 Fix ULID (if any error occurs)
-If you face this error: `AttributeError: module 'ulid' has no attribute 'new'`
-
-Run these commands:
-```bash
-pip uninstall -y ulid ulid-py ulid3
-pip install ulid-py
-```
-Optionally, upgrade pip to avoid compatibility issues:
-```bash
-python -m pip install --upgrade pip
 ```
 
 ## 5️⃣ Run the agent:
