@@ -55,11 +55,23 @@ pip install -r requirements.txt
 ```bash
 OPENROUTER_API_KEY=your_key_here
 ```
+* then run this in your terminal:
+```bash
+setx OPENROUTER_API_KEY "sk-or-v1-your_api_key_here"
+```
+* ⚠️ Close and reopen your Command Prompt after running `setx`.
+To verify:
+```bash
+echo %OPENROUTER_API_KEY%
+```
+If it shows your key (partially hidden), you're good.
 
 ## 5️⃣ Run the agent:
 ```bash
 python main.py
 ```
+Now you can chat directly with the ROMA Research Agent, 
+Type your questions and it will respond intelligently using the ROMA framework.
 
 ## 👾 Example
 ```bash
