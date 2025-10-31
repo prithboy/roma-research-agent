@@ -72,6 +72,19 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
+## 🚨 Fix ULID (if any error occurs)
+If you face this error: `AttributeError: module 'ulid' has no attribute 'new'`
+
+Run these commands:
+```bash
+pip uninstall -y ulid ulid-py ulid3
+pip install ulid-py
+```
+Optionally, upgrade pip to avoid compatibility issues:
+```bash
+python -m pip install --upgrade pip
+```
+
 ## 5️⃣ Run the agent:
 ```bash
 python main.py
