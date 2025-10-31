@@ -28,8 +28,11 @@ It runs locally in your terminal and answers queries in real time using OpenRout
 ## 1️⃣ Clone the repo:
 ```bash
 git clone https://github.com/prithboy/roma-research-agent.git
+```
+```
 cd roma-research-agent
 ```
+
 
 ## 2️⃣ Create a virtual environment:
 ```bash
@@ -52,6 +55,8 @@ pip install -r requirements.txt
 
 ```bash
 pip uninstall -y ulid ulid-py ulid3
+```
+```bash
 pip install ulid-py
 ```
 
@@ -68,18 +73,11 @@ OPENROUTER_API_KEY=your_key_here
 ```bash
 setx OPENROUTER_API_KEY "sk-or-v1-your_api_key_here"
 ```
-* ⚠️ Close and reopen your Command Prompt after running `setx`.
 To verify:
 ```bash
 echo %OPENROUTER_API_KEY%
 ```
 * If it shows your key (partially hidden), you're good.
-
-* since you repoen your terminal, so before entering run command activate `venv` again
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
 
 ## 5️⃣ Run the agent:
 ```bash
