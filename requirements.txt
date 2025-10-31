@@ -1,7 +1,7 @@
 httpx
+aiohttp
+ulid-py==1.1.0
 python-dotenv
 sentient-agent-framework
 arxiv
-ulid-py
-aiohttp
 pydantic
