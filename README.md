@@ -64,7 +64,13 @@ To verify:
 ```bash
 echo %OPENROUTER_API_KEY%
 ```
-If it shows your key (partially hidden), you're good.
+* If it shows your key (partially hidden), you're good.
+
+* since you repoen your terminal so before entering run command activate `venv` again
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
 ## 5️⃣ Run the agent:
 ```bash
@@ -87,7 +93,7 @@ Type your questions and it will respond intelligently using the ROMA framework.
 ```bash
 httpx
 aiohttp
-ulid-py
+ulid-py==1.1.0
 python-dotenv
 sentient-agent-framework
 arxiv
